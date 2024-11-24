@@ -1,3 +1,28 @@
-body{
-    background-color: #011825;
+body {
+  background-color: #011825;
+}
+
+.stars {
+  z-index: 0;
+
+}
+.Sun {
+  z-index: 1;
+}
+
+.Planets {
+  z-index: 1;
+}
+.Moutains {
+  z-index: 2;
+}
+.BottomMountains {
+  transform: translateY();
+  z-index: 3;
+}
+.Crater {
+  z-index: 5;
+}
+.LoadingScreen{
+    z-index: 12;
 }

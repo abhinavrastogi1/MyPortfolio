@@ -8,12 +8,17 @@ export function Spaceman() {
   const { actions } = useAnimations(animations, spacemanRef);
   useEffect(() => {
     actions["Idle"].play();
-    actions["Idle"].timeScale=2
+    actions["Idle"].timeScale = 2;
   }, [animations]);
 
   return (
-    <mesh>
-      <primitive object={scene} ref={spacemanRef} rotation={[0,2,0]}c position={[0,-0.1,2]}/>
+    <mesh renderOrder={100}>
+      <primitive
+        object={scene}
+        ref={spacemanRef}
+        rotation={[0, 2, 0.4]}
+        position={[0, -0.4, 2]}
+      />
     </mesh>
   );
 }

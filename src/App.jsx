@@ -1,10 +1,13 @@
-import { BoxGeometry } from "three";
-import "./App.css";
-import { Canvas } from "@react-three/fiber";
 import ThreeDimensionalSection from "./Component/3dSection";
-
+import { Background } from "./Component/Background";
+import "./App.css";
 function App() {
-  return <ThreeDimensionalSection />;
+  return (
+    <>
+      <Background />
+      <ThreeDimensionalSection />
+    </>
+  );
 }
 
 export default App;
