@@ -5,9 +5,12 @@ import { Header } from "./Component/Header";
 function App() {
   return (
     <>
-      <Header />
-      <Background />
-      <ThreeDimensionalSection />
+     <div className="flex overflow-hidden relative">
+    <Header />
+    <Background />
+    <ThreeDimensionalSection />
+      
+     </div>
     </>
   );
 }

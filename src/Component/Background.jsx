@@ -42,16 +42,19 @@ export function Background() {
   return (
     <>
       {" "}
-      <img src={Stars} ref={Starsref} className=" absolute stars " />
-      <img src={Planets} ref={Planetsref} className="absolute Planets" />
-      <img src={Moutains} ref={Moutainsref} className="absolute Moutains " />
-      <img
-        src={BottomMountains}
-        ref={BottomMountainsref}
-        className="absolute  BottomMountains"
-      />
-      <img src={Crater} className=" absolute  Crater " />
-      <img src={Sun} className=" absolute Sun" />
+      <div className="w-[1300px] sm:w-[2500px] lg:w-full absolute">
+        {" "}
+        <img src={Stars} ref={Starsref} className=" absolute stars w-full " />
+        <img src={Planets} ref={Planetsref} className="absolute Planets" />
+        <img src={Moutains} ref={Moutainsref} className="absolute Moutains  " />
+        <img
+          src={BottomMountains}
+          ref={BottomMountainsref}
+          className="absolute  BottomMountains"
+        />
+        <img src={Crater} className=" absolute  Crater " />
+        <img src={Sun} className=" absolute Sun" />
+      </div>
     </>
   );
 }
