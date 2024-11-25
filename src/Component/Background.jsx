@@ -7,40 +7,50 @@ import Crater from "../assets/5Crater.svg";
 import Sun from "../assets/6Sun.svg";
 
 export function Background() {
-  const Craterref = useRef();
   const Planetsref = useRef();
   const BottomMountainsref = useRef();
   const Starsref = useRef();
+  const Moutainsref = useRef();
+  // to create parrallex efffect in the bg
   useEffect(() => {
     function onScroll() {
-      Craterref.current.style.transform = `translateY(-${
-        window.scrollY * 0.22
-      }px)`;
-      Starsref.current.style.transform = `translateY(-${
-        window.scrollY * 0.2
-      }px)`;
-      Planetsref.current.style.transform = `translateY(${
-        window.scrollY * 0.2
-      }px)`;
-      BottomMountainsref.current.style.transform = `translateY(-${
-        window.scrollY * 0.2
-      }px)`;
+      if (Starsref.current) {
+        Starsref.current.style.transform = `translateY(-${
+          window.scrollY * 0.1
+        }px)`;
+      }
+      if (Planetsref.current) {
+        Planetsref.current.style.transform = `translateY(${
+          window.scrollY * 0.2
+        }px)`;
+      }
+      if (BottomMountainsref.current) {
+        BottomMountainsref.current.style.transform = `translateY(${
+          window.scrollY * 0.15
+        }px)`;
+      }
+      if (Moutainsref.current) {
+        Moutainsref.current.style.transform = `translateY(${
+          window.scrollY * 0.25
+        }px)`;
+      }
     }
 
     window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
     <>
       {" "}
       <img src={Stars} ref={Starsref} className=" absolute stars " />
       <img src={Planets} ref={Planetsref} className="absolute Planets" />
-      <img src={Moutains} className="absolute Moutains " />
+      <img src={Moutains} ref={Moutainsref} className="absolute Moutains " />
       <img
         src={BottomMountains}
         ref={BottomMountainsref}
         className="absolute  BottomMountains"
       />
-      <img src={Crater} ref={Craterref} className=" absolute  Crater " />
+      <img src={Crater} className=" absolute  Crater " />
       <img src={Sun} className=" absolute Sun" />
     </>
   );

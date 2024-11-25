@@ -1,6 +1,6 @@
 import { Html, useProgress } from "@react-three/drei";
 
-export function LoadingScreen() {
+export function Loading() {
   const { progress } = useProgress();
   return (
     <>

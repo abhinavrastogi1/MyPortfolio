@@ -7,11 +7,11 @@ body {
 
 }
 .Sun {
-  z-index: 1;
+  z-index: 2;
 }
 
 .Planets {
-  z-index: 1;
+  z-index: 2;
 }
 .Moutains {
   z-index: 2;

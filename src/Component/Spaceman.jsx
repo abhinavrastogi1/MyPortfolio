@@ -17,7 +17,7 @@ export function Spaceman() {
         object={scene}
         ref={spacemanRef}
         rotation={[0, 2, 0.4]}
-        position={[0, -0.4, 2]}
+        position={[0, -0.5, 2]}
       />
     </mesh>
   );
