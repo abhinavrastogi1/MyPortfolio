@@ -18,6 +18,7 @@ export function Spaceman() {
         ref={spacemanRef}
         rotation={[0, 2, 0.4]}
         position={[0, -0.5, 2]}
+        scale={[0.5, 0.5, 0.5]}
       />
     </mesh>
   );

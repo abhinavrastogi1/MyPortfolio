@@ -5,7 +5,7 @@ import { Header } from "./Component/Header";
 function App() {
   return (
     <>
-     <div className="flex overflow-hidden relative">
+     <div className="flex overflow-hidden relative ">
     <Header />
     <Background />
     <ThreeDimensionalSection />
