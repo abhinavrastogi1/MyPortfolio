@@ -42,7 +42,7 @@ export function Background() {
   return (
     <>
       {" "}
-      <div className="w-[1300px] sm:w-[2500px] xl:w-full absolute">
+      <div className="w-[1400px] sm:w-[2500px] xl:w-full absolute">
         {" "}
         <img src={Stars} ref={Starsref} className=" absolute stars w-full " />
         <img src={Planets} ref={Planetsref} className="absolute Planets" />
