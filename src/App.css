@@ -4,8 +4,7 @@ body {
 
 .stars {
   z-index: 0;
-  width:100%;
-
+  width: 100%;
 }
 .Sun {
   z-index: 2;
@@ -24,6 +23,8 @@ body {
 .Crater {
   z-index: 5;
 }
-.LoadingScreen{
-    z-index: 12;
+.LoadingScreen {
+  z-index: 12;
 }
+
+

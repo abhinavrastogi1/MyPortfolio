@@ -8,7 +8,7 @@ function ThreeDimensionalSection() {
     <>
       {" "}
       {/* add 3d model to the canvas */}
-      <div className="w-full  h-[110vh] sm:h-[160vh] md:h-[190vh]  lg:h-[180vh] xl:h-[140vh] relative">
+      <div className="w-full  h-[130vh] sm:h-[170vh] md:h-[190vh]  lg:h-[180vh] xl:h-[140vh] relative">
         <Canvas
           camera={{ near: 0.1, far: 1000 }}
           className="z-10 h-full w-full "
