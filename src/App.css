@@ -27,4 +27,14 @@ body {
   z-index: 12;
 }
 
+@media (max-width: 625px) and (min-height: 800px) {
+  .canvas {
+    height: 110vh;
+  }
+}
 
+@media (max-width: 625px) and (max-height: 700px) {
+  .canvas {
+    height: 140vh;
+  }
+}
