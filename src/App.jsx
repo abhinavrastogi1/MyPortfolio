@@ -1,16 +1,18 @@
-import ThreeDimensionalSection from "./Component/3dSection";
+import Home from "./Component/Home";
 import { Background } from "./Component/Background";
 import "./App.css";
 import { Header } from "./Component/Header";
-import { PortfolioSection } from "./Component/PortfolioSection";
+import { About } from "./Component/About";
+import { useRef } from "react";
 function App() {
+  const aboutRef = useRef(null);
   return (
     <>
       <div className="flex overflow-hidden  flex-col relative ">
         <Header />
         <Background />
-        <ThreeDimensionalSection />
-        <PortfolioSection />
+        <Home aboutRef={aboutRef} />
+        <About ref={aboutRef} />
       </div>
     </>
   );

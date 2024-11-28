@@ -3,7 +3,7 @@ import spaceman from "../assets/spaceman.glb";
 import { useEffect, useRef, useState } from "react";
 export function Spaceman() {
   const { scene, animations } = useGLTF(spaceman);
-  const [position, setPosition] = useState([0, -0.8, 2]);
+  const [position, setPosition] = useState([0, -0.6, 2.5]);
   const [scale, setScale] = useState([0.6, 0.6, 0.6]);
   const spacemanRef = useRef();
   const { actions } = useAnimations(animations, spacemanRef);
@@ -27,6 +27,9 @@ export function Spaceman() {
       } else if (width > 1280) {
         setPosition([0, -0.5, 2]);
         setScale([1, 1, 1]);
+      } else {
+        setPosition([0, -0.6, 2.5]);
+        setScale([0.6, 0.6, 0.6]);
       }
     }
     resize();

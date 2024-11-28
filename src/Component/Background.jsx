@@ -11,27 +11,33 @@ export function Background() {
   const BottomMountainsref = useRef();
   const Starsref = useRef();
   const Moutainsref = useRef();
+  const Craterref = useRef();
   // to create parrallex efffect in the bg
   useEffect(() => {
     function onScroll() {
       if (Starsref.current) {
-        Starsref.current.style.transform = `translateY(-${
-          window.scrollY * 0.1
+        Starsref.current.style.transform = `translateY(${
+          window.scrollY * 0.15
         }px)`;
       }
       if (Planetsref.current) {
         Planetsref.current.style.transform = `translateY(${
-          window.scrollY * 0.2
+          window.scrollY * 0.3
         }px)`;
       }
       if (BottomMountainsref.current) {
         BottomMountainsref.current.style.transform = `translateY(${
-          window.scrollY * 0.15
+          window.scrollY * 0.2
         }px)`;
       }
       if (Moutainsref.current) {
         Moutainsref.current.style.transform = `translateY(${
-          window.scrollY * 0.25
+          window.scrollY * 0.3
+        }px)`;
+      }
+      if (Craterref.current) {
+        Craterref.current.style.transform = `translateY(${
+          window.scrollY * 0.04
         }px)`;
       }
     }
@@ -52,7 +58,7 @@ export function Background() {
           ref={BottomMountainsref}
           className="absolute  BottomMountains"
         />
-        <img src={Crater} className=" absolute  Crater " />
+        <img src={Crater} ref={Craterref} className=" absolute  Crater " />
         <img src={Sun} className=" absolute Sun" />
       </div>
     </>
