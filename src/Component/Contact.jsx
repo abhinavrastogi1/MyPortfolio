@@ -1,14 +1,75 @@
 import { Canvas } from "@react-three/fiber";
+import { Suspense, useRef } from "react";
+import { Robot } from "./Robot";
+import { OrbitControls } from "@react-three/drei";
 
 export function Contact() {
-  //https://formspree.io/f/manylypw
+  return (
+    <>
+      <div className="w-full h-[100vh] text-center px-5 py-4 sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-48 lg:py-4 mb-10">
+        <h1 className="text-white text-7xl my-11 font-bold">Let's Connect</h1>
+        <div className=" h-[80%] gap-x-2 flex w-full  ">
+          <div className="w-[40%] ">
+            <Canvas shadows camera={{ near: 0.1, far: 1000 }} className="  ">
+              <OrbitControls enableZoom={false}/>
 
-return(  <>
-    <div className="w-full   h-[100vh] text-center    my-28 px-5 py-4 sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-48 lg:py-4">
-      <h1 className="text-white  text-7xl my-11 font-bold ">Let's Connect</h1>
-      <Canvas>
+              <Lights />
 
-      </Canvas>
-    </div>
-  </>)
+              <Suspense fallback={null}>
+                <Robot />
+              </Suspense>
+            </Canvas>
+          </div>
+          <div className=" w-[60%]">
+            <form
+              action="https://formspree.io/f/manylypw"
+              method="POST"
+              className="w-full flex flex-col items-start gap-y-2"
+            >
+              <span className="text-white">Full Name</span>
+
+              <input
+                placeholder="Enter your full name"
+                size={80}
+                className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md "
+              />
+              <span className="text-white">Email</span>
+              <input
+                placeholder="Enter your email"
+                size={80}
+                className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md "
+              />
+              <span className="text-white">Message</span>
+
+              <textarea
+                placeholder="Enter your message"
+                required
+                name="name"
+                rows="10"
+                cols={80}
+                className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md"
+              />
+              <button
+                type="submit "
+                className="text-white p-4 rounded-md bg-[#0D3056] my-3 font-bold text-lg"
+              >
+                {" "}
+                submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function Lights() {
+  return (
+    <>
+      <ambientLight intensity={1.5} /> {/* Increase intensity */}
+      <pointLight position={[-5, 5, 5]} intensity={5} color="#ffffff" />
+      <spotLight position={[0, -10, 5]} angle={0.3} intensity={5} castShadow />
+    </>
+  );
 }

@@ -37,11 +37,13 @@ function Home({ aboutRef }) {
         >
           click me
         </button>
-        <Canvas
+        <Canvas shadows
           camera={{ near: 0.1, far: 1000 }}
           className="z-10 h-full w-full "
         >
           <Suspense fallback={<Loading />}>
+            <directionalLight castShadow />
+
             <Spaceman depthTest={false} />
           </Suspense>
         </Canvas>
