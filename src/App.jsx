@@ -4,6 +4,9 @@ import "./App.css";
 import { Header } from "./Component/Header";
 import { About } from "./Component/About";
 import { useRef } from "react";
+import { Footer } from "./Component/Footer";
+import { Contact } from "./Component/Contact";
+import { Projects } from "./Component/Projects";
 function App() {
   const aboutRef = useRef(null);
   return (
@@ -13,6 +16,9 @@ function App() {
         <Background />
         <Home aboutRef={aboutRef} />
         <About ref={aboutRef} />
+        {/* <Projects /> */}
+        <Contact />
+        <Footer />
       </div>
     </>
   );

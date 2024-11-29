@@ -12,7 +12,7 @@ function Home({ aboutRef }) {
       <div className="w-full  h-[130vh] sm:h-[170vh] md:h-[190vh]  lg:h-[180vh] xl:h-[140vh]  canvas ">
         <div
           className=" w-[70%] sm:w-[60%] md:w-[55%] lg:w-[50%] xl:w-[40%] absolute top-40 sm:top-48 md:top-56 lg:top-64 z-50
-         px-5 py-4 sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-20 lg:py-4 "
+         px-5 py-4 sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-28 lg:py-4 "
         >
           <ReactTypingEffect
             text={[
