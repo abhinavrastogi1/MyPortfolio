@@ -16,9 +16,8 @@ function App() {
         <Background />
         <Home aboutRef={aboutRef} />
         <About ref={aboutRef} />
-       
-        <Contact />
         <Projects />
+        <Contact />
         <Footer />
       </div>
     </>

@@ -11,7 +11,7 @@ export function Robot() {
   return (
     <>
       <mesh>
-        <primitive object={scene} ref={robotRef} rotation={[.3,.2,-.1]} position={[0,0,0]} scale={[1.5,1.5,1.5]}  />
+        <primitive object={scene} ref={robotRef} rotation={[0.15,.2,-.1]} position={[-2.3,-1,0]} scale={[1.8,1.8,1.8]}  />
       </mesh>{" "}
     </>
   );
