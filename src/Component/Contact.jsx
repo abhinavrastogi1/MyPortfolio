@@ -1,15 +1,23 @@
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useRef } from "react";
+import React, { Suspense, useRef } from "react";
 import { Robot } from "./Robot";
 import { OrbitControls } from "@react-three/drei";
 import { Loading } from "./Loading";
+import { CgMail } from "react-icons/cg";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
 
-export function Contact() {
+export const Contact = React.forwardRef((props, ref) => {
   return (
     <>
-      <div className="w-full h-[100vh]  text-center px-5 py-4 sm:px-10 sm:py-4 
-      md:px-16 md:py-4 lg:px-48 lg:py-4 mb-10 ">
-        <h1 className="text-white text-7xl mb-10 font-bold">Let's Connect</h1>
+      <div
+        className="w-full h-[100vh]  text-center px-5 py-4 sm:px-10 sm:py-4 
+      md:px-16 md:py-4 lg:px-48 lg:py-4 mb-10 "
+        ref={ref}
+        id="contact"
+      >
+        <h1 className="text-white text-7xl mb-10 font-bold">Let's Connect </h1>
         <div className=" h-[80%] gap-x-2 flex w-full  justify-end flex-wrap ">
           <div className="w-[100%]  absolute h-[15%] z-10  ">
             <Canvas shadows camera={{ near: 0.1, far: 1000 }} className="  ">
@@ -33,6 +41,7 @@ export function Contact() {
                 type="text"
                 placeholder="Enter your full name"
                 size={80}
+                required
                 className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md "
               />
               <span className="text-white">Email</span>
@@ -41,6 +50,7 @@ export function Contact() {
                 type="email"
                 placeholder="Enter your email"
                 size={80}
+                required
                 className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md "
               />
               <span className="text-white">Message</span>
@@ -61,12 +71,26 @@ export function Contact() {
                 submit
               </button>
             </form>
+            <div className=" flex  gap-3">
+              <a href="mailto:abhinavrsatogi986@gmail.com" target="_blank">
+                <SiGmail className=" text-white text-4xl p-1 " />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abhinav-rastogi-a664612a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+              >
+                <FaLinkedin className=" text-white text-4xl p-1" />
+              </a>
+              <a href="https://github.com/abhinavrastogi1" target="blank">
+                <FaSquareGithub className=" text-white text-4xl p-1" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+});
 
 function Lights() {
   return (
