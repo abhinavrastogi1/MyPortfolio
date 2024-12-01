@@ -1,6 +1,6 @@
-import instagram from "../assets/instagram.svg";
-import linkedin from "../assets/LinkedIn.svg";
-import facebook from "../assets/Facebook.svg";
+import instagram from "../assets/SocialMedia/instagram.svg";
+import linkedin from "../assets/SocialMedia/LinkedIn.svg";
+import facebook from "../assets/SocialMedia/Facebook.svg";
 
 export function Footer() {
   return (

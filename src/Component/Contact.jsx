@@ -7,9 +7,10 @@ import { Loading } from "./Loading";
 export function Contact() {
   return (
     <>
-      <div className="w-full h-[100vh]  text-center px-5 py-4 sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-48 lg:py-4 mb-10">
+      <div className="w-full h-[100vh]  text-center px-5 py-4 sm:px-10 sm:py-4 
+      md:px-16 md:py-4 lg:px-48 lg:py-4 mb-10 ">
         <h1 className="text-white text-7xl mb-10 font-bold">Let's Connect</h1>
-        <div className=" h-[80%] gap-x-2 flex w-full  justify-end ">
+        <div className=" h-[80%] gap-x-2 flex w-full  justify-end flex-wrap ">
           <div className="w-[100%]  absolute h-[15%] z-10  ">
             <Canvas shadows camera={{ near: 0.1, far: 1000 }} className="  ">
               <OrbitControls enableZoom={false} />

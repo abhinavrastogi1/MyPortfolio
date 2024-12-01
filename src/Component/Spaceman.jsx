@@ -1,5 +1,5 @@
 import { useAnimations, useGLTF } from "@react-three/drei";
-import spaceman from "../assets/spaceman.glb";
+import spaceman from "../assets/3dModels/spaceman.glb";
 import { useEffect, useRef, useState } from "react";
 export function Spaceman() {
   const { scene, animations } = useGLTF(spaceman);

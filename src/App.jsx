@@ -7,6 +7,7 @@ import { useRef } from "react";
 import { Footer } from "./Component/Footer";
 import { Contact } from "./Component/Contact";
 import { Projects } from "./Component/Projects";
+import { Skills } from "./Component/Skill";
 function App() {
   const aboutRef = useRef(null);
   return (
@@ -16,6 +17,7 @@ function App() {
         <Background />
         <Home aboutRef={aboutRef} />
         <About ref={aboutRef} />
+        <Skills />
         <Projects />
         <Contact />
         <Footer />

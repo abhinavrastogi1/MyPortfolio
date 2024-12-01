@@ -5,7 +5,7 @@ export const About = React.forwardRef((props, ref) => {
   return (
     <>
       <div
-        className="w-full   h-[100vh] text-center    my-28 px-5 py-4 sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-48 lg:py-4"
+        className="w-full    text-center    my-28 px-5 py-4 sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-48 lg:py-4"
         ref={ref}
       >
         <div>

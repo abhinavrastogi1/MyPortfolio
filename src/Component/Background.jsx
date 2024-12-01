@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
-import Stars from "../assets/1Stars.svg";
-import Planets from "../assets/2Planets.svg";
-import Moutains from "../assets/3Mountain.svg";
-import BottomMountains from "../assets/4Mountain.svg";
-import Crater from "../assets/5Crater.svg";
-import Sun from "../assets/6Sun.svg";
+import Stars from "../assets/HomeBackground/1Stars.svg";
+import Planets from "../assets/HomeBackground/2Planets.svg";
+import Moutains from "../assets/HomeBackground/3Mountain.svg";
+import BottomMountains from "../assets/HomeBackground/4Mountain.svg";
+import Crater from "../assets/HomeBackground/5Crater.svg";
+import Sun from "../assets/HomeBackground/6Sun.svg";
 
 export function Background() {
   const Planetsref = useRef();
