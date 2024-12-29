@@ -15,8 +15,8 @@ export function Robot() {
           object={scene}
           ref={robotRef}
           rotation={[0.15, 0.2, -0.1]}
-          position={[-2.3, -1, 0]}
-          scale={[2, 2, 2]}
+          position={[0, -1.5, 0]}
+          scale={[1.5, 1.5, 1.5]}
         />
       </mesh>{" "}
     </>

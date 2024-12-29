@@ -5,7 +5,7 @@ import facebook from "../assets/SocialMedia/Facebook.svg";
 export function Footer() {
   return (
     <>
-      <div className="bg-[#000814] w-full    px-5  py-2 sm:px-10  md:px-16  lg:px-48  flex justify-center gap-10  flex-wrap ">
+      <div className="bg-[#000814] w-full    px-5  py-2 sm:px-10  md:px-16  lg:px-36 xl:px-40 2xl:px-48  flex justify-center gap-10  flex-wrap ">
         <p className="text-white text-xs sm:text-sm  md:text-base lg:text-lg">
           &#169; 2024 Abhinav Rastogi. All Rights Reserved.
         </p>

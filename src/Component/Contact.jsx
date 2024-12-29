@@ -12,15 +12,20 @@ export const Contact = React.forwardRef((props, ref) => {
   return (
     <>
       <div
-        className="w-full h-[100vh]  text-center px-5 py-4 sm:px-10 sm:py-4 
-      md:px-16 md:py-4 lg:px-48 lg:py-4 mb-10 "
+        className="w-full  h-full  text-center px-10 py-4 sm:px-10 sm:py-4 
+      md:px-16 md:py-4 lg:px-36 xl:px-40 2xl:px-48 lg:py- mb-10  "
         ref={ref}
         id="contact"
       >
         <h1 className="text-white text-7xl mb-10 font-bold">Let's Connect </h1>
-        <div className=" h-[80%] gap-x-2 flex w-full  justify-end flex-wrap ">
-          <div className="w-[100%]  absolute h-[15%] z-10  ">
-            <Canvas shadows camera={{ near: 0.1, far: 1000 }} className="  ">
+        <div className="  gap-x-2  grid grid-rows-2 xl:grid-rows-none xl:grid-cols-[1.2fr_1.8fr]
+        2xl:grid-cols-[1fr_2fr]  w-full  ">
+          <div className="   min-w-[100%] z-10  ">
+            <Canvas
+              shadows
+              camera={{ near: 0.1, far: 1000 }}
+              className=" w-full "
+            >
               <OrbitControls enableZoom={false} />
               <Lights />
               <Suspense fallback={<Loading />}>
@@ -28,11 +33,11 @@ export const Contact = React.forwardRef((props, ref) => {
               </Suspense>
             </Canvas>
           </div>
-          <div className=" w-[60%]  z-20 ">
+          <div className=" min-w-[100%]  z-50 ">
             <form
               action="https://formspree.io/f/manylypw"
               method="POST"
-              className="w-full flex flex-col items-start gap-y-2"
+              className="w-full flex flex-col items-start gap-y-2 xl:px-6"
             >
               <span className="text-white">Full Name</span>
 
@@ -40,18 +45,16 @@ export const Contact = React.forwardRef((props, ref) => {
                 name="full name"
                 type="text"
                 placeholder="Enter your full name"
-                size={80}
                 required
-                className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md "
+                className="bg-[#0D3056] border-2 border-white  flex flex-wrap w-full text-base text-white font-medium p-3 rounded-md "
               />
               <span className="text-white">Email</span>
               <input
                 name="email"
                 type="email"
                 placeholder="Enter your email"
-                size={80}
                 required
-                className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md "
+                className="bg-[#0D3056] border-2 w-full flex flex-wrap border-white text-base text-white font-medium p-3 rounded-md "
               />
               <span className="text-white">Message</span>
 
@@ -60,8 +63,7 @@ export const Contact = React.forwardRef((props, ref) => {
                 required
                 name="message"
                 rows="10"
-                cols={80}
-                className="bg-[#0D3056] border-2 border-white text-base text-white font-medium p-3 rounded-md"
+                className="bg-[#0D3056] border-2 w-full  flex flex-wrap border-white text-base text-white font-medium p-3 rounded-md"
               />
               <button
                 type="submit "
@@ -76,7 +78,7 @@ export const Contact = React.forwardRef((props, ref) => {
                 <SiGmail className=" text-white text-4xl p-1 " />
               </a>
               <a
-                href="https://www.linkedin.com/in/abhinav-rastogi-a664612a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                href="https://www.linkedin.com/in/abhinavrastogi986"
                 target="_blank"
               >
                 <FaLinkedin className=" text-white text-4xl p-1" />

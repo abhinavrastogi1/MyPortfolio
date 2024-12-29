@@ -1,5 +1,5 @@
 import React from "react";
-import bigBasketImg from "../assets/Projects/GroceryProject.png";
+import NutriNest from "../assets/Projects/NutriNest.png";
 export const Projects = React.forwardRef((props, ref) => {
   return (
     <>
@@ -10,7 +10,7 @@ export const Projects = React.forwardRef((props, ref) => {
         <div>
           <h1 className="text-white  text-7xl my-11 font-bold "> Projects</h1>
         </div>{" "}
-        <img src={bigBasketImg} />
+        <img src={NutriNest}  />
       </div>
     </>
   );

@@ -10,7 +10,7 @@ const Home = React.forwardRef((props, ref) => {
       {" "}
       {/* add 3d model to the canvas */}
       <div
-        className="w-full  h-[130vh] sm:h-[170vh] md:h-[190vh]  lg:h-[180vh] xl:h-[140vh]  canvas "
+        className="w-full  h-[130vh] sm:h-[170vh] md:h-[190vh]  lg:h-[180vh] xl:h-[100vh] 2xl:h-[130vh]  canvas "
         ref={ref}
         id="home" 
       >
