@@ -33,10 +33,11 @@ export const About = React.forwardRef((props, ref) => {
               className="text-white text-lg  font-semibold py-7 flex 
             flex-wrap justify-start text-start  w-full xl:w-[80%] "
             >
-              I'm Abhinav Rastogi, a MERN stack developer with a strong passion
-              for backend development and a knack for building database-driven
-              applications. I enjoy solving real-world problems and turning
-              ideas into reality through code.
+              I'm Abhinav Rastogi, a full-stack developer skilled in the MERN
+              stack, with a strong passion for backend development and a focus
+              on building database-driven applications. I thrive on solving
+              real-world problems and transforming ideas into functional,
+              scalable solutions through code.
             </p>
             <div className=" flex flex-col gap-4  ">
               <div className="flex gap-5">

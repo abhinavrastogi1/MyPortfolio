@@ -11,7 +11,7 @@ export const Projects = React.forwardRef((props, ref) => {
         id="projects"
       >
         <div>
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl  mb-2  font-bold">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl  mb-5  font-bold">
             {" "}
             Projects
           </h1>
@@ -100,10 +100,10 @@ export const Projects = React.forwardRef((props, ref) => {
                 className=" text-left text-lg text-white  font-bold  flex 
             flex-wrap justify-start items-start  w-full xl:text-xl"
               >
-                NutriNest - Online Grocery App A grocery shopping app with
-                product browsing, cart management, secure checkout, and
-                real-time order tracking. Built with MERN stack, Stripe API, and
-                Firebase Auth. 🔗 Live: [Add Link] | 📂 GitHub: [Add Link]
+                NutriNest - A grocery shopping app with product browsing, search
+                filtering, dynamic cart management, and user authentication
+                using JWT tokens. It ensures secure access with protected
+                routes. Built with the MERN stack.
               </p>
               <a href="https://nutrinest.clikn.in" target="_blank"></a>
               <h2
