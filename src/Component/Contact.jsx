@@ -19,7 +19,7 @@ export const Contact = React.forwardRef((props, ref) => {
       >
         <h1 className="text-white text-7xl mb-10 font-bold">Let's Connect </h1>
         <div className="  gap-x-2  grid grid-rows-2 xl:grid-rows-none xl:grid-cols-[1.2fr_1.8fr]
-        2xl:grid-cols-[1fr_2fr]  w-full  ">
+        2xl:grid-cols-[1fr_2fr]  w-full rounded-md shadow-md  shadow-[#03A4C3]  ">
           <div className="   min-w-[100%] z-10  ">
             <Canvas
               shadows

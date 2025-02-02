@@ -1,7 +1,12 @@
 import { CiMenuFries } from "react-icons/ci";
 import { HiOutlineDownload } from "react-icons/hi";
-
+import spaceMusic from "../assets/spaceMusic.mp3";
 import logo from "../assets/ARlogo2.png";
+import { Howl } from "howler";
+import { useEffect, useRef, useState } from "react";
+import { LuVolumeOff } from "react-icons/lu";
+import { LuVolume2 } from "react-icons/lu";
+
 export function Header({
   aboutRef,
   homeRef,
@@ -9,6 +14,12 @@ export function Header({
   contactRef,
   currentActive,
 }) {
+  const audioRef = useRef(null);
+  const [audioPlay, setAUdioPlay] = useState(false);
+  useEffect(() => {
+    console.log(audioPlay)
+    audioPlay ? audioRef.current?.play() : "";
+  }, [audioPlay]);
   return (
     <>
       <div className=" flex justify-between w-full fixed z-30 px-5 py-4 sm:px-10 sm:py-4  md:px-16 md:py-4 lg:px-20 lg:py-4">
@@ -18,7 +29,10 @@ export function Header({
           </div>
           <div className="h-10 my-2 sm:my-3 md:my-4">
             {" "}
-            <a href="../assets/ARlogo2.png" download="">
+            <a
+              href="/Abhinav_Rastogi_Resume.pdf"
+              download="Abhinav_Rastogi_Resume.pdf"
+            >
               <button className="bg-[#1584C1] text-white  h-10 p-2 w-28 flex font-bold rounded-lg ">
                 <HiOutlineDownload className="text-2xl" />
                 <span>Resume</span>
@@ -82,6 +96,26 @@ export function Header({
             </li>
           </ul>
         </div>
+      </div>
+      <div className="flex justify-between  bottom-0 right-0 fixed z-50 px-5 py-4 sm:px-10 sm:py-4  md:px-16 md:py-4 lg:px-20 lg:py-4">
+        {" "}
+        <button
+          className="bg-orange-500 p-4 rounded-full"
+          onClick={() => {
+            setAUdioPlay(!audioPlay);
+          }}
+        >
+          {audioPlay ? (
+            <LuVolume2 className="text-white" />
+          ) : (
+            <LuVolumeOff className="text-white" />
+          )}
+        </button>
+        {audioPlay && (
+          <audio ref={audioRef}   loop>
+            <source src={spaceMusic} type="audio/mpeg" />
+          </audio>
+        )}
       </div>
     </>
   );

@@ -12,18 +12,18 @@ import postman from "../assets/Skills/Postman.svg";
 export function Skills() {
   return (
     <>
-      <div className="w-full flex flex-row  gap-5 px-5 py-4 
+      <div className="w-full flex flex-row  gap-5 px-5 py-4 mt-12
       sm:px-10 sm:py-4 md:px-16 md:py-4 lg:px-20 lg:py-4 justify-center flex-wrap  ">
-        <img src={mongoDb} alt="mongoDb img " className="h-16 w-16" />
-        <img src={react} alt="react img" className="h-16 w-16" />
-        <img src={express} alt="express img" className="h-16 w-16" />
-        <img src={node} alt="node img" className="h-16 w-16" />
-        <img src={gitHub} alt="gitHub img" className="h-16 w-16" />
-        <img src={python} alt="python img" className="h-16 w-16" />
-        <img src={Cpp} alt="Cpp img" className="h-16 w-16" />
-        <img src={Tailwind} alt="Tailwind img" className="h-16 w-16" />
-        <img src={Threejs} alt="Threejs img" className="h-16 w-16" />
-        <img src={postman} alt="postman img" className="h-16 w-16" />
+        <img src={mongoDb} alt="mongoDb img " className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={react} alt="react img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={express} alt="express img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={node} alt="node img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={gitHub} alt="gitHub img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={python} alt="python img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={Cpp} alt="Cpp img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={Tailwind} alt="Tailwind img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={Threejs} alt="Threejs img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
+        <img src={postman} alt="postman img"  className=" h-10 w-10  sm:w-12 sm:h-12  md:w-14 md:h-14 lg:w-16 lg:h-16" />
       </div>
     </>
   );

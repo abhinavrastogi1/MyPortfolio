@@ -22,7 +22,7 @@ export function Footer() {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/abhinav-rastogi-a664612a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/abhinavrastogi986"
             target="_blank"
           >
             {" "}
@@ -32,14 +32,7 @@ export function Footer() {
               className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7"
             />
           </a>
-          <a href="/">
-            {" "}
-            <img
-              alt=" facebook link"
-              src={facebook}
-              className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7"
-            />
-          </a>
+         
         </div>
       </div>
     </>

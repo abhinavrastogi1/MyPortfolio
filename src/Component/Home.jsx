@@ -21,7 +21,7 @@ const Home = React.forwardRef((props, ref) => {
           <ReactTypingEffect
             text={[
               "Hi, I'm Abhinav Rastogi",
-              "A Passionate MERN Stack Developer!",
+              "A Passionate Full Stack MERN Developer!",
             ]}
             className="text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] "
             cursor="🚀"
