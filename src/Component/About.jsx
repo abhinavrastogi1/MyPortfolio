@@ -75,8 +75,8 @@ export const About = React.forwardRef((props, ref) => {
                         Frontend:{" "}
                       </span>
                       <span>
-                        React.js (Hooks , Context API , Redux, Next.js) HTML5 ,
-                        CSS3 , TailwindCSS
+                        React.js (Hooks , Context API , Redux ) HTML5 , CSS3
+                        ,JavaScript, TailwindCSS
                       </span>
                     </h3>
                   </div>
