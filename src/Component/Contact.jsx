@@ -24,13 +24,12 @@ export const Contact = React.forwardRef((props, ref) => {
           className="  gap-x-2  grid grid-rows-2 xl:grid-rows-none xl:grid-cols-[1.2fr_1.8fr]
         2xl:grid-cols-[1fr_2fr]  w-full rounded-md shadow-md  shadow-[#03A4C3]  "
         >
-          <div className="   min-w-[100%] z-10 h-full  ">
+          <div className="   min-w-[100%] z-0 h-full  ">
             <Canvas
               shadows
               camera={{ near: 0.1, far: 1000 }}
               className=" w-full h-full"
             >
-              <OrbitControls enableZoom={false} />
               <Lights />
               <Suspense fallback={<Loading />}>
                 <Robot />
