@@ -17,7 +17,6 @@ export function Header({
   const audioRef = useRef(null);
   const [audioPlay, setAUdioPlay] = useState(false);
   useEffect(() => {
-    console.log(audioPlay)
     audioPlay ? audioRef.current?.play() : "";
   }, [audioPlay]);
   return (

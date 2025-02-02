@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import React, { Suspense, useRef } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import { Robot } from "./Robot";
 import { OrbitControls } from "@react-three/drei";
 import { Loading } from "./Loading";
@@ -9,6 +9,9 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 
 export const Contact = React.forwardRef((props, ref) => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <>
       <div
@@ -40,6 +43,13 @@ export const Contact = React.forwardRef((props, ref) => {
             <form
               action="https://formspree.io/f/manylypw"
               method="POST"
+              onSubmit={() => {
+                setTimeout(() => {
+                  setEmail("");
+                  setMessage("");
+                  setName("");
+                }, 1000);
+              }}
               className="w-full flex flex-col items-start gap-y-2 xl:px-6 px-2"
             >
               <span className="text-white">Full Name</span>
@@ -47,6 +57,10 @@ export const Contact = React.forwardRef((props, ref) => {
               <input
                 name="full name"
                 type="text"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
                 placeholder="Enter your full name"
                 required
                 className="bg-[#0D3056] border-2 border-white  flex flex-wrap w-full text-base text-white font-medium p-3 rounded-md "
@@ -55,6 +69,10 @@ export const Contact = React.forwardRef((props, ref) => {
               <input
                 name="email"
                 type="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
                 placeholder="Enter your email"
                 required
                 className="bg-[#0D3056] border-2 w-full flex flex-wrap border-white text-base text-white font-medium p-3 rounded-md "
@@ -64,6 +82,10 @@ export const Contact = React.forwardRef((props, ref) => {
               <textarea
                 placeholder="Enter your message"
                 required
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
                 name="message"
                 rows="10"
                 className="bg-[#0D3056] border-2 w-full  flex flex-wrap border-white text-base text-white font-medium p-3 rounded-md"

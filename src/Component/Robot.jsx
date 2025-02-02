@@ -23,4 +23,3 @@ export function Robot() {
   );
 }
 
-//rotation={[.6,.6,-.2]} position={[-4,1,0]}
