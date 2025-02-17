@@ -111,7 +111,7 @@ export function Header({
           )}
         </button>
         {audioPlay && (
-          <audio ref={audioRef}   loop>
+          <audio ref={audioRef} loop>
             <source src={spaceMusic} type="audio/mpeg" />
           </audio>
         )}
