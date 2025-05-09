@@ -29,8 +29,8 @@ export function Header({
           <div className="h-10 my-2 sm:my-3 md:my-4">
             {" "}
             <a
-              href="/Abhinav_Rastogi_Resume.pdf"
-              download="Abhinav_Rastogi_Resume.pdf"
+              href="/Abhinav_Resume.pdf"
+              download="Abhinav_Resume.pdf"
             >
               <button className="bg-[#1584C1] text-white  h-10 p-2 w-28 flex font-bold rounded-lg ">
                 <HiOutlineDownload className="text-2xl" />
